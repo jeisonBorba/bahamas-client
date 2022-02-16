@@ -1,0 +1,53 @@
+version: "3"
+services:
+  api_service:
+    image: jeisonborba/bahamasclient
+    restart: always
+    volumes:
+      - ${PWD}/logs:/logs
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo_db
+    networks:
+      - local_dev
+
+  mongo_db:
+    container_name: bahamas-client-db
+    image: "mongo:4.4.3"
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: client
+        MONGO_INITDB_ROOT_PASSWORD: client
+        MONGO_INITDB_DATABASE: order-database
+    volumes:
+        - bahamas_client_data:/data/db
+    ports:
+      - 27017:27017
+    restart: always
+    networks:
+      - local_dev
+
+  mongo-express:
+    container_name: mongo-client
+    image: mongo-express
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: bahamas-client-db
+      ME_CONFIG_BASICAUTH_USERNAME: client
+      ME_CONFIG_BASICAUTH_PASSWORD: client
+      ME_CONFIG_MONGODB_PORT: 27017
+      ME_CONFIG_MONGODB_ADMINUSERNAME: client
+      ME_CONFIG_MONGODB_ADMINPASSWORD: client
+    depends_on:
+      - mongo_db
+    restart: always
+    networks:
+      - local_dev 
+
+volumes:
+  bahamas_client_data:
+
+networks: 
+  local_dev:
+    driver: bridge  

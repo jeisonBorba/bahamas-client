@@ -1,0 +1,69 @@
+2022-02-16 11:00:00.023  INFO 32048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate    : Finished Spring Data repository scanning in 72 ms. Found 1 MongoDB repository interfaces.
+2022-02-16 11:00:00.209  INFO 32048 --- [main] o.s.cloud.context.scope.GenericScope        : BeanFactory id=b0e8ddc4-957d-3bd8-a418-b9c387ab446d
+2022-02-16 11:00:00.788 DEBUG 32048 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter    : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-16 11:00:00.915 DEBUG 32048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping    : 4 mappings in 'requestMappingHandlerMapping'
+2022-02-16 11:00:00.973 DEBUG 32048 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping     : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-16 11:00:01.002 DEBUG 32048 --- [main] .m.m.a.ExceptionHandlerExceptionResolver    : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-16 11:00:01.152  INFO 32048 --- [main] org.mongodb.driver.cluster                  : Cluster created with settings {hosts=[mongo_db:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-16 11:00:01.989  INFO 32048 --- [main] c.b.j.b.BahamasClientApplicationTests       : Started BahamasClientApplicationTests in 3.142 seconds (JVM running for 4.508)
+2022-02-16 11:00:02.036 DEBUG 32048 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext      : Closing org.springframework.web.context.support.GenericWebApplicationContext@4ee33af7, started on Wed Feb 16 10:59:59 BRT 2022
+2022-02-16 14:01:11.115  INFO 1 --- [main] c.b.j.b.BahamasClientApplication            : Starting BahamasClientApplication v0.0.1-SNAPSHOT using Java 1.8.0_212 on 547fd04a25cd with PID 1 (/app.jar started by root in /)
+2022-02-16 14:01:11.119  INFO 1 --- [main] c.b.j.b.BahamasClientApplication            : No active profile set, falling back to default profiles: default
+2022-02-16 14:01:11.840  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate    : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-16 14:01:11.841  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate    : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-02-16 14:01:11.875  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate    : Finished Spring Data repository scanning in 29 ms. Found 1 MongoDB repository interfaces.
+2022-02-16 14:01:12.033  INFO 1 --- [main] o.s.cloud.context.scope.GenericScope        : BeanFactory id=1511759f-58fd-3f2f-86d3-903ffb5b5abf
+2022-02-16 14:01:12.445  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer     : Tomcat initialized with port(s): 8080 (http)
+2022-02-16 14:01:12.456  INFO 1 --- [main] o.apache.catalina.core.StandardService      : Starting service [Tomcat]
+2022-02-16 14:01:12.457  INFO 1 --- [main] org.apache.catalina.core.StandardEngine     : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-16 14:01:12.500  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]          : Initializing Spring embedded WebApplicationContext
+2022-02-16 14:01:12.504  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext    : Root WebApplicationContext: initialization completed in 1311 ms
+2022-02-16 14:01:12.697 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter    : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-16 14:01:12.855 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping    : 4 mappings in 'requestMappingHandlerMapping'
+2022-02-16 14:01:12.877 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping     : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-16 14:01:12.883 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver    : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-16 14:01:12.967  INFO 1 --- [main] org.mongodb.driver.cluster                  : Cluster created with settings {hosts=[mongo_db:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-02-16 14:01:13.027  INFO 1 --- [cluster-rtt-ClusterId{value='620d03a823f80a31a61e4b5c', description='null'}-mongo_db:27017] org.mongodb.driver.connection               : Opened connection [connectionId{localValue:2, serverValue:2}] to mongo_db:27017
+2022-02-16 14:01:13.030  INFO 1 --- [cluster-ClusterId{value='620d03a823f80a31a61e4b5c', description='null'}-mongo_db:27017] org.mongodb.driver.connection               : Opened connection [connectionId{localValue:1, serverValue:3}] to mongo_db:27017
+2022-02-16 14:01:13.030  INFO 1 --- [cluster-ClusterId{value='620d03a823f80a31a61e4b5c', description='null'}-mongo_db:27017] org.mongodb.driver.cluster                  : Monitor thread successfully connected to server with description ServerDescription{address=mongo_db:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20163900}
+2022-02-16 14:01:13.384  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer     : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-16 14:01:13.392  INFO 1 --- [main] c.b.j.b.BahamasClientApplication            : Started BahamasClientApplication in 3.057 seconds (JVM running for 3.593)
+2022-02-16 14:01:25.204  INFO 1 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-16 14:01:25.205  INFO 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Initializing Servlet 'dispatcherServlet'
+2022-02-16 14:01:25.205 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Detected StandardServletMultipartResolver
+2022-02-16 14:01:25.206 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Detected AcceptHeaderLocaleResolver
+2022-02-16 14:01:25.206 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Detected FixedThemeResolver
+2022-02-16 14:01:25.208 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f381794
+2022-02-16 14:01:25.209 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Detected org.springframework.web.servlet.support.SessionFlashMapManager@68567e20
+2022-02-16 14:01:25.209 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-02-16 14:01:25.209  INFO 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Completed initialization in 4 ms
+2022-02-16 14:01:25.218 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : GET "/api/retrieve-bahamas-client/1234", parameters={}
+2022-02-16 14:01:25.227 DEBUG 1 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping     : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-02-16 14:01:25.231 DEBUG 1 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler        : Resource not found
+2022-02-16 14:01:25.232 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Completed 404 NOT_FOUND
+2022-02-16 14:01:25.236 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : "ERROR" dispatch for GET "/error", parameters={}
+2022-02-16 14:01:25.239 DEBUG 1 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping    : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-02-16 14:01:25.265 DEBUG 1 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-16 14:01:25.266 DEBUG 1 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Writing [{timestamp=Wed Feb 16 14:01:25 GMT 2022, status=404, error=Not Found, path=/api/retrieve-bahamas-cli (truncated)...]
+2022-02-16 14:01:25.320 DEBUG 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet           : Exiting from "ERROR" dispatch, status 404
+2022-02-16 14:01:35.721 DEBUG 1 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet           : GET "/retrieve-bahamas-client/1234", parameters={}
+2022-02-16 14:01:35.724 DEBUG 1 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping    : Mapped to com.br.jborba.bahamasclient.adapters.rest.ClientController#retrieve(Long)
+2022-02-16 14:01:35.866  INFO 1 --- [http-nio-8080-exec-2] org.mongodb.driver.connection               : Opened connection [connectionId{localValue:3, serverValue:4}] to mongo_db:27017
+2022-02-16 14:01:35.884  INFO 1 --- [http-nio-8080-exec-2] c.b.j.b.adapters.rest.ClientController      : Received request to retrieve client: [ClientDTO{invoiceId=null, fiscalId=null, name='null', email='null'}]
+2022-02-16 14:01:35.885  INFO 1 --- [http-nio-8080-exec-2] c.b.j.b.adapters.rest.ClientController      : No client found with invoiveId: [null]
+2022-02-16 14:01:35.896 DEBUG 1 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-16 14:01:35.897 DEBUG 1 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Nothing to write: null body
+2022-02-16 14:01:35.897 DEBUG 1 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet           : Completed 404 NOT_FOUND
+2022-02-16 14:01:45.969 DEBUG 1 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet           : POST "/store-bahamas-client/12345?fiscalId=999999988&name=Jeison2&email=jeison%40bob.com", parameters={masked}
+2022-02-16 14:01:45.971 DEBUG 1 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping    : Mapped to com.br.jborba.bahamasclient.adapters.rest.ClientController#store(Long, Long, String, String)
+2022-02-16 14:01:45.984  INFO 1 --- [http-nio-8080-exec-3] c.b.j.b.adapters.rest.ClientController      : Received request to store new client: [Invoice{id=null, invoiceId=12345, fiscalId=999999988, name='Jeison2', email='jeison@bob.com'}]
+2022-02-16 14:01:46.065  INFO 1 --- [http-nio-8080-exec-3] c.b.j.b.a.e.InvoiceRegisterMock             : Mocking invoice register invoiceId: 12345, ficalId: 999999988, name: Jeison2, email: jeison@bob.com
+2022-02-16 14:01:46.067 DEBUG 1 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-16 14:01:46.067 DEBUG 1 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Writing [ClientDTO{invoiceId=12345, fiscalId=999999988, name='Jeison2', email='jeison@bob.com'}]
+2022-02-16 14:01:46.068 DEBUG 1 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet           : Completed 201 CREATED
+2022-02-16 14:01:52.308 DEBUG 1 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet           : GET "/retrieve-bahamas-client/12345", parameters={}
+2022-02-16 14:01:52.309 DEBUG 1 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping    : Mapped to com.br.jborba.bahamasclient.adapters.rest.ClientController#retrieve(Long)
+2022-02-16 14:01:52.327  INFO 1 --- [http-nio-8080-exec-4] c.b.j.b.adapters.rest.ClientController      : Received request to retrieve client: [ClientDTO{invoiceId=12345, fiscalId=999999988, name='Jeison2', email='jeison@bob.com'}]
+2022-02-16 14:01:52.328 DEBUG 1 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-02-16 14:01:52.329 DEBUG 1 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor     : Writing [ClientDTO{invoiceId=12345, fiscalId=999999988, name='Jeison2', email='jeison@bob.com'}]
+2022-02-16 14:01:52.330 DEBUG 1 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet           : Completed 200 OK
